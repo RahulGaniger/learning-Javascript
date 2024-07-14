@@ -101,14 +101,78 @@ heap : non primitive  but here its gives reference to the object if u cange anyt
 
 // object destructuring  { } curly braces used for both araay and object destructring it will helpful in react
 
-const student = {
-    name:"ram",
-    age:27,
-    gender:"female"
-}
+// const student = {
+//     name:"ram",
+//     age:27,
+//     gender:"female"
+// }
 
-console.log(student.name);
-const{name} = student               //object destructring
-console.log(name);
-const{gender,age} = student               //object destructring multiple properties at once
-console.log(gender,age);
+// console.log(student.name);
+// const{name} = student               //object destructring
+// console.log(name);
+// const{gender,age} = student               //object destructring multiple properties at once
+// console.log(gender,age);
+
+
+// functions
+
+// function addPriceCart(...n){    // u can use the rest args operator to give any no of arguments it will collect and store as array
+//     return n
+// }
+
+// console.log(addPriceCart(2,3,500,60000));
+
+
+
+// function addPriceCart1(val1,val2, ...n){    // u can use the rest args operator to give any no of arguments it will collect and store as array
+//     return n
+// }
+
+// console.log(addPriceCart1(2,3,500,60000));   //the first 2 values goes in val1 and val2
+
+
+
+// arrow functions
+// console.log(add(1,3));         //hoisting
+
+// function add(a,b){
+//     return a + b
+// }
+
+
+// // console.log(a(1,3));      //it will throw error
+
+// let a = function add(a,b){
+//     return a + b
+// }
+
+// console.log(a(1,3));         
+
+
+
+// function outer(){
+//     console.log(this);
+//     let a = function inner(){
+//         console.log(this);
+//     }
+//     // a()
+// }
+// outer()
+
+// console.log(this);
+
+
+// let b = (a,b)=>{console.log("hi"); console.log(a+b);}
+// b(1.4)
+
+
+
+// immediately invoked function expression(IIFE)
+
+(function greet(){
+    console.log("hi");
+})();      // here u hv to use semicolon the IIFE do not where to stop if u nt give it will throw error
+
+( () => {
+    console.log("hello");
+})()
