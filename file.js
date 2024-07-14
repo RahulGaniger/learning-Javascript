@@ -169,10 +169,48 @@ heap : non primitive  but here its gives reference to the object if u cange anyt
 
 // immediately invoked function expression(IIFE)
 
-(function greet(){
-    console.log("hi");
-})();      // here u hv to use semicolon the IIFE do not where to stop if u nt give it will throw error
+// (function greet(){
+//     console.log("hi");
+// })();      // here u hv to use semicolon the IIFE do not where to stop if u nt give it will throw error
 
-( () => {
-    console.log("hello");
-})()
+// ( () => {
+//     console.log("hello");
+// })()
+
+// falsy values: false, null. NaN, BigInt 0n, "",0, -0, undefined
+// strings comes under truthy values: "false"," ", "0", []
+
+//higher order loops
+
+let arr = [1,3,4,5,5,6,]
+// arr.forEach( (e) => {
+//     console.log(e);
+// })
+
+// function print(e){
+//     console.log(e);
+
+// }
+
+// arr.forEach(print)
+
+
+let course = [
+    {
+        "courseName" : "js",
+        "price" : 1000
+    },
+    {
+        "courseName" : "python",
+        "price" : 2000
+    },
+    {
+        "courseName" : "css",
+        "price" : 100
+    }
+]
+
+course.forEach( (item) => {
+    console.log(item["courseName"])      //if u want to use [] the key should be string
+    console.log(item["price"]);
+})
