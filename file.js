@@ -182,7 +182,7 @@ heap : non primitive  but here its gives reference to the object if u cange anyt
 
 //higher order loops
 
-let arr = [1,3,4,5,5,6,]
+// let arr = [1,3,4,5,5,6,]
 // arr.forEach( (e) => {
 //     console.log(e);
 // })
@@ -195,22 +195,61 @@ let arr = [1,3,4,5,5,6,]
 // arr.forEach(print)
 
 
-let course = [
-    {
-        "courseName" : "js",
-        "price" : 1000
-    },
-    {
-        "courseName" : "python",
-        "price" : 2000
-    },
-    {
-        "courseName" : "css",
-        "price" : 100
-    }
-]
+// let course = [
+//     {
+//         "courseName" : "js",
+//         "price" : 1000
+//     },
+//     {
+//         "courseName" : "python",
+//         "price" : 2000
+//     },
+//     {
+//         "courseName" : "css",
+//         "price" : 100
+//     }
+// ]
 
-course.forEach( (item) => {
-    console.log(item["courseName"])      //if u want to use [] the key should be string
-    console.log(item["price"]);
-})
+// course.forEach( (item) => {
+//     console.log(item["courseName"])      //if u want to use [] the key should be string
+//     console.log(item["price"]);
+// })
+
+ 
+// let arr = [1,3,4,5,6,7,79]
+// const arr2 = arr.map( (a) => a+5)     //u can apply any method here method chaining it will print the last method op
+//             .map( (b) => b*10)
+//             .filter( (c) => c > 80) 
+            
+//             console.log(arr2);
+
+// let nums = [122, 345, 2000, 300]
+// let inVal = 0                        //FOR REDUCE to work u need to give initial value and its takes accumulator and current val
+//                                      //at start accumalator will be initial val and then it add current val to that  and it goes on
+// let b = nums.reduce( (acc,curr ) =>     
+// {
+//     return acc+curr
+// },1)
+// console.log(b);
+
+
+// const arr2 = arr.forEach( (b) =>     //for each loop will not give new array rather use map
+// {
+//     return b
+// } )
+// console.log(arr2);
+
+
+
+const a = document.getElementById("one").innerHTML("By hitesh chai or code")
+console.log(a);
+
+// DOM : Document Object Model
+// innerText:give only showing content
+// innerContent : give whole content with hidden data
+//innerHTML : give with tag
+
+// when u use queery selector all it willl give node list u can access those like this store it in any variable 
+// for ex
+// list[0].style.color = "red"
+// for HTMLCollection u hv to convert it into array using method Array.from()  then u can loop over it
