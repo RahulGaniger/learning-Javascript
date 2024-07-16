@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        .title{
+            background-color: black;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="title">
+    <!-- <h2 id="one" class="1">Learning DOM</h2>
+    <h2 id="two" class="1">Learning DOM2</h2>
+    <h2 id="three" class="1">Learning DOM3</h2>
+    <p id="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illo a enim, consequuntur dolor accusamus neque eius sapiente reiciendis quis fugiat at minus sunt ex impedit inventore, placeat officia eveniet.</p>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul> -->
+
+    <!-- <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">friday</div>
+    </div> -->
+<!-- how to access child and parent of components -->
+    <!-- <script src="file.js"></script> -->
+     <script>
+    //     let days = document.querySelector(".parent")
+    //     // let day = Array.from(days.children);
+    //     // for (let i = 0; i < day.length; i++) {
+    //     //      console.log(day[i].innerHTML);    
+    //     // }
+    //     // console.log(days.lastElementChild.innerHTML);
+    //     // console.log(days.firstElementChild.innerHTML = "my");
+    //     console.log(days.childre);
+    //     let nodes = days.childNodes
+    //     console.log(nodes);  //it will consider enter as a comp comment also everything 
+    
+    
+    
+    //how to create ur own element
+    let elem = document.createElement("div")
+    console.log(elem);
+    elem.className= "one"
+    elem.id = Math.floor(Math.random()*10+1)
+    elem.setAttribute("title", "chai aur code")
+    elem.style.color = "yellow"
+    elem.style.padding = "20px"
+    // elem.innerHTML = "My Name is RAHUL"
+    const addText = document.createTextNode("My Name is RAHUL")  //this and above line are same only
+    elem.appendChild(addText)
+// appending div element on document
+    document.body.appendChild(elem)
+    </script>
+    
+</body>
+</html>
